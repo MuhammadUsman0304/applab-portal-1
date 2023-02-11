@@ -59,15 +59,18 @@ function applab_create_app_tbl()
 // creating page for job listings on plugin activation 
 function applab_job_listing_pg()
 {
-  $job_listing_page = array(
-    'post_type' => 'page',
-    'post_title' => 'Job Listing',
-    'post_status' => 'publish',
-    'post_author' => 1,
-    'post_name' => 'job-listing'
-  );
+  $job_listing_page = get_page_by_path('job-listing');
+  if (!$job_listing_page) {
+    $job_listing_page = array(
+      'post_type' => 'page',
+      'post_title' => 'Job Listing',
+      'post_status' => 'publish',
+      'post_author' => 1,
+      'post_name' => 'job-listing'
+    );
 
-  wp_insert_post($job_listing_page);
+    wp_insert_post($job_listing_page);
+  }
 }
 
 
