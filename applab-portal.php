@@ -79,11 +79,3 @@ function applab_template_redirect()
   }
 }
 add_action('template_redirect', 'applab_template_redirect');
-register_deactivation_hook(__FILE__, function () {
-  // Delete pages
-  $page1_id = get_page_by_title('Job Listing');
-  $page2_id = get_page_by_title('Apply Job');
-  wp_delete_post($page1_id, true);
-  wp_delete_post($page2_id, true);
-  flush_rewrite_rules();
-});
