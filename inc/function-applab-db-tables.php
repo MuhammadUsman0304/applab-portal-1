@@ -60,10 +60,11 @@ function applab_create_app_tbl()
 function applab_job_listing_pg()
 {
   $job_listing_page = array(
-    'post_title' => 'Job Listing',
-    'post_content' => '',
-    'post_status' => 'publish',
     'post_type' => 'page',
+    'post_title' => 'Job Listing',
+    'post_status' => 'publish',
+    'post_author' => 1,
+    'post_name' => 'job-listing'
   );
 
   wp_insert_post($job_listing_page);

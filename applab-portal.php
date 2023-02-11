@@ -2,7 +2,7 @@
 
 /*
   Plugin Name: Applab portal 
-  Plugin URI: https://github.com/MuhammadUsman0304/job-manager
+  Plugin URI: https://github.com/MuhammadUsman0304/applab-portal-1
   Description: Post jobs on your WordPress site. User can apply and attach resume for the jobs, user can display jobs on other websites with the help of api
   Author: Muhammad Usman
   Version: 1.0.0
