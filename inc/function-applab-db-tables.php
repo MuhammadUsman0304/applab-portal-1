@@ -46,7 +46,7 @@ function applab_create_app_tbl()
   `app_name` varchar(130) NOT NULL,
   `app_job_id` int(11) NOT NULL,
   `app_email` varchar(130) NOT NULL,
-  `app_phone` varchar(130) NOT NULL,
+  `app_msg` text NOT NULL,
   `app_cv` text NOT NULL,
   PRIMARY KEY (`app_id`)
 );";
